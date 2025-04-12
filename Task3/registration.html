@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<body>
+
+<!-----------header start-------------->
+<header class="header">
+    <div class="container-custom">
+        <div class="logo">
+            <a href="home.html">
+                <img class="code" src="images/Code.svg" alt="">
+            </a>
+    </div>
+        <nav class="navbar navbar-expand-lg">
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="home.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="registration.html">Registration</a></li>
+                    <li class="nav-item"><a class="nav-link" href="login.html">Login</a></li>
+                    <li class="nav-item"><a class="nav-link" href="to-do.html">To-Do</a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+</header>
+<!-----------header end-------------->
+
+<!-----------banner start-------------->
+<div class="banner">
+    <div class="banner-text" >
+        <p>Registration / <a class="p-text" href="home.html">Home</a></p>
+    </div>
+</div>
+<!-----------banner end-------------->
+
+<!-----------form start-------------->
+<div class="form-container">
+    <h3>Registration Form</h3>
+    <form id="registrationForm">
+        <div class="form-group">
+            <label for="fullName">Full Name</label>
+            <input type="text" id="fullName" name="fullName" required placeholder="">
+        </div>
+        <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required placeholder="" class="input-field">
+        </div>
+        <div class="form-group">
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" required placeholder="">
+        </div>
+        <div class="form-group">
+            <label for="confirmPassword">Confirm Password</label>
+            <input type="password" id="confirmPassword" name="confirmPassword" required placeholder="">
+        </div>
+        <div class="checkbox">
+            <input type="checkbox" id="rememberMe" name="rememberMe">
+            <label for="rememberMe">Remember Me</label>
+        </div>
+        <button type="button" class="button" onclick="validateForm()">Register</button>
+        <div class="login-link">
+            <span>Already have an account? <a class="login-text" href="login.html">Login</a></span>
+        </div>    
+    </form>
+</div>
+<!-----------form end-------------->
+
+<!-----------footer start-------------->
+<footer class="footer">
+    <div class="container">
+        <p>Follow us on</p>
+        <a href="#" class="mr-3"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" class="mr-3"><i class="fab fa-twitter"></i></a>
+        <a href="#" class="mr-3"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+        <p class="copy">Copyright 2019. All Rights Reserved.</p>
+    </div>
+</footer>
+<!-----------footer start-------------->
+
+<!-----------script-------------->
+
+<script src="script.js"></script>
+</body>
+</html>
